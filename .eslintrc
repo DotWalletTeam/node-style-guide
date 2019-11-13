@@ -1,9 +1,22 @@
 {
   "env": {
-    "node": true
+    "es6": true,
+    "node": true,
+    "jasmine": true,
+    "browser": true
   },
+  "extends": "eslint:recommended",
   "rules": {
-    "indent":["error",2],
+    // indent for 2 space
+    "indent": ["error" ,2],
+    // use unix type new-line
+    "linebreak-style": ["error", "unix"],
+    // use let instead of var
+    "no-var": "warn",
+    // use strict mode
+    "strict": ["warn", "global"],
+
+    //===================================
     "array-bracket-spacing": [2, "never"],
     "block-scoped-var": 2,
     "brace-style": [2, "1tbs"],
